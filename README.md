@@ -6,7 +6,7 @@ A private hive DayZ 1.8.0.3 server on Linux
 Installation instructions
 =========================
 
-1. The following programs must be installed on your Linux system: tar, gcc, perl, mysql.
+1. The following programs must be installed on your Linux system: screen, tar, gcc, perl, mysql.
 
 2. Download and install newest ArmA beta patch (http://www.arma2.com/beta-patch.php).
 

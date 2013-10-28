@@ -1,6 +1,8 @@
 #!/usr/bin/perl
+#
 # Copyright 2013 by Denis Erygin, 
 # denisio.bro@gmail.com 
+#
 
 use String::CRC32;
 use Socket;

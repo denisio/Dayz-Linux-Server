@@ -26,7 +26,7 @@ Installation instructions
    Remove any .dll files you might still find (in battleye, expansion and
    expansion/battleye directories).<br>
    When adding mission .pbo's or mods remember to run ./tolower again or
-   manually change the filenames to lowercase. ANY uppercase letter in
+   manually change the filenames to lowercase.<br> ANY uppercase letter in
    a filename will crash the server!
 
 5. Create database and load database.sql into Mysql.

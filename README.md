@@ -1,4 +1,4 @@
 Dayz-Linux-Server
 =================
 
-A private hive DayZ server on Linux
+A private hive DayZ 1.8.0.3 server on Linux

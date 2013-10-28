@@ -7,7 +7,9 @@ Installation instructions
 =========================
 
 1. The following programs must be installed on your Linux system: tar, gcc.
+
 2. Download and install newest ArmA beta patch (http://www.arma2.com/beta-patch.php).
+
 3. Copy the whole "ArmA 2: Operation Arrowhead" directory from Windows to server Linux-directory.
    ArmA2 directory should contain subdirectories "Addons", "Dta", "Expansion", etc.
    Example: pack with PKZIP (WinZip, PowerArchiver, etc.) on Windows and unpack with "unzip" on Linux.
@@ -16,6 +18,7 @@ Installation instructions
    GOOD: "/home/bob/arma2arrowhead"
    BAD:  "/home/bob/ArmA2ArrowHead"
 3. Download and install DayZ Mod 1.8.0.3.
+
 4. Run ./install
    Watch the messages - they might inform you whether your installation
    failed. Double check that all directories were renamed to lower case.
@@ -27,5 +30,6 @@ Installation instructions
 
 
 5. Create database and load database.sql into Mysql.
+
 6. Run ./restarter.pl
 

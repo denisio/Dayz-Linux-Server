@@ -1,0 +1,1 @@
+export LD_LIBRARY_PATH=.:/usr/lib32:$LD_LIBRARY_PATH;./server -server -mod="@hive;@dayz" -config="cfgdayz/server.cfg" -cfg="cfgdayz/basic.cfg" -port=2302 -beta="expansion/beta;expansion/beta/expansion" -noSound -noPause -world=Chernarus -profiles=cfgdayz -name=cfgdayz -cpucount=4 -showscripterrors -pid=2302.pid 2>&1 | ./writer.pl

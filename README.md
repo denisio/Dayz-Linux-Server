@@ -2,3 +2,30 @@ Dayz-Linux-Server
 =================
 
 A private hive DayZ 1.8.0.3 server on Linux
+
+Installation instructions:
+==========================
+
+1. The following programs must be installed on your Linux system: tar, gcc.
+2. Download and install newest ArmA beta patch (http://www.arma2.com/beta-patch.php).
+3. Copy the whole "ArmA 2: Operation Arrowhead" directory from Windows to server Linux-directory.
+   ArmA2 directory should contain subdirectories "Addons", "Dta", "Expansion", etc.
+   Example: pack with PKZIP (WinZip, PowerArchiver, etc.) on Windows and unpack with "unzip" on Linux.
+   DO NOT use upper case letters in the ArmA2 directory name (or in any files that the server uses 
+   like missions or mods):
+   GOOD: "/home/bob/arma2arrowhead"
+   BAD:  "/home/bob/ArmA2ArrowHead"
+3. Download and install DayZ Mod 1.8.0.3.
+4. Run ./install
+   Watch the messages - they might inform you whether your installation
+   failed. Double check that all directories were renamed to lower case.
+   Remove any .dll files you might still find (in battleye, expansion and
+   expansion/battleye directories).
+   When adding mission .pbo's or mods remember to run ./tolower again or
+   manually change the filenames to lowercase. ANY uppercase letter in
+   a filename will crash the server!
+
+
+5. Create database and load database.sql into Mysql.
+6. Run ./restarter.pl
+

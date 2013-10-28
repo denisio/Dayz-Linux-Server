@@ -18,7 +18,7 @@ Installation instructions
    GOOD: "/home/bob/arma2arrowhead"<br>
    BAD:  "/home/bob/ArmA2ArrowHead"
 
-3. Download and install DayZ Mod 1.8.0.3.
+3. Download and install DayZ Mod 1.8.0.3 (http://se1.dayz.nu/latest/1.8.0.3/%40Client-1.8.0.3-Full.rar).
 
 4. Run ./install<br>
    Watch the messages - they might inform you whether your installation

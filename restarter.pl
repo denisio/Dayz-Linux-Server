@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 #
 # Copyright 2013 by Denis Erygin,
-# denisio.bro@gmail.com           
+# denis.erygin@gmail.com
 #
 
 use warnings;

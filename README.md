@@ -29,7 +29,15 @@ Installation instructions
    manually change the filenames to lowercase.<br> ANY uppercase letter in
    a filename will crash the server!
 
-5. Create database and load database.sql into Mysql.
+5. Create database and load database.sql into Mysql.<br>
+   $ chmod +x install server *.sh *.pl<br>
 
-6. Run ./restarter.pl
+6. Run ./server.sh for test<br>
+   Watch the messages - they might inform you whether your installation failed.
+
+7. Run ./restarter.pl<br>
+   $ screen -r
+
+
+
 

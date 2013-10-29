@@ -28,7 +28,7 @@ CREATE TABLE `Character_DATA` (
   `Humanity` int(11) NOT NULL DEFAULT '2500',
   PRIMARY KEY (`CharacterID`),
   KEY `CharFetch` (`PlayerUID`,`Alive`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=25998 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 --
 -- Table structure for table `Object_DATA`
@@ -51,7 +51,7 @@ CREATE TABLE `Object_DATA` (
   PRIMARY KEY (`ObjectID`),
   KEY `ObjectUID` (`ObjectUID`),
   KEY `Instance` (`Instance`)
-) ENGINE=MyISAM AUTO_INCREMENT=843 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 --
 -- Table structure for table `Object_init_DATA`
@@ -74,7 +74,7 @@ CREATE TABLE `Object_init_DATA` (
   PRIMARY KEY (`ObjectID`),
   KEY `ObjectUID` (`ObjectUID`),
   KEY `Instance` (`Instance`)
-) ENGINE=MyISAM AUTO_INCREMENT=90 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 --
 -- Table structure for table `Player_DATA`
@@ -101,5 +101,5 @@ CREATE TABLE `Player_LOGIN` (
   `Datestamp` datetime NOT NULL,
   `Action` tinyint(3) NOT NULL,
   PRIMARY KEY (`LoginID`)
-) ENGINE=MyISAM AUTO_INCREMENT=50929 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 

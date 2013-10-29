@@ -31,6 +31,7 @@ Installation instructions
 
 5. Create database and load database.sql into Mysql.<br>
    $ chmod +x install server *.sh *.pl<br>
+   # apt-get install libjson-xs-perl 
 
 6. Run ./server.sh for test<br>
    Watch the messages - they might inform you whether your installation failed.

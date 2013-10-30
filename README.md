@@ -30,8 +30,14 @@ Installation instructions
    a filename will crash the server!<br>
    <pre>$ for x in *; do mv $x `echo $x | tr [A-Z] [a-z]`; done</pre>
 
-5. Create database and load database.sql into Mysql.<br>
-   <pre>LOAD DATA INFILE 'object_init_data.txt' INTO TABLE Object_init_DATA;</pre><br>
+5. Create database "dayz" (login: "dayz", password: "dayz") and load database.sql into Mysql.<br>
+   Load vehicle objects:<br>
+   <pre>LOAD DATA INFILE 'object_init_data.txt' INTO TABLE Object_init_DATA;<br>
+   Or use:<br>
+   $ mv object_init_data.txt Object_init_DATA.txt<br>
+   $ mysqlimport -u root -p --local dayz Object_init_DATA.txt  
+   </pre>
+
    $ chmod +x install server *.sh *.pl<br>
    $ sudo apt-get install libjson-xs-perl 
 

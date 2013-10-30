@@ -27,7 +27,8 @@ Installation instructions
    expansion/battleye directories).<br>
    When adding mission .pbo's or mods remember to run ./tolower again or
    manually change the filenames to lowercase.<br> ANY uppercase letter in
-   a filename will crash the server!
+   a filename will crash the server!<br>
+   $ for x in *; do mv $x `echo $x | tr [A-Z] [a-z]`; done
 
 5. Create database and load database.sql into Mysql.<br>
    <pre>LOAD DATA INFILE 'object_init_data.txt' INTO TABLE Object_init_DATA;</pre><br>

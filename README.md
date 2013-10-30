@@ -30,6 +30,7 @@ Installation instructions
    a filename will crash the server!
 
 5. Create database and load database.sql into Mysql.<br>
+   <pre>LOAD DATA INFILE 'object_init_data.txt' INTO TABLE Object_init_DATA;</pre><br>
    $ chmod +x install server *.sh *.pl<br>
    $ sudo apt-get install libjson-xs-perl 
 

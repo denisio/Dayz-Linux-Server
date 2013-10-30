@@ -34,9 +34,12 @@ Installation instructions
 5. Create database "dayz" (login: "dayz", password: "dayz") and load database.sql into Mysql.<br>
    Load vehicle objects:
    <pre>LOAD DATA INFILE 'object_init_data.txt' INTO TABLE Object_init_DATA;
+   LOAD DATA INFILE 'object_init_data.txt' INTO TABLE Object_DATA;
    Or use mysqlimport:
    $ mv object_init_data.txt Object_init_DATA.txt
    $ mysqlimport -u root -p --local dayz Object_init_DATA.txt  
+   $ mv Object_init_DATA.txt Object_DATA.txt
+   $ mysqlimport -u root -p --local dayz Object_DATA.txt
    </pre>
    $ chmod +x install server *.sh *.pl<br>
    $ sudo apt-get install libjson-xs-perl 

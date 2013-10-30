@@ -16,7 +16,8 @@ Installation instructions
    DO NOT use upper case letters in the ArmA2 directory name (or in any files that the server uses 
    like missions or mods):<br>
    GOOD: "/home/bob/arma2arrowhead"<br>
-   BAD:  "/home/bob/ArmA2ArrowHead"
+   BAD:  "/home/bob/ArmA2ArrowHead"<br>
+   http://rutor.org/torrent/240581/
 
 3. Download and install DayZ Mod 1.8.0.3 (http://se1.dayz.nu/latest/1.8.0.3/%40Client-1.8.0.3-Full.rar).
 

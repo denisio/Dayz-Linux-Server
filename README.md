@@ -42,8 +42,8 @@ Installation instructions
    $ mysqlimport -u root -p --local dayz Object_DATA.txt
    </pre>
    $ chmod +x install server *.sh *.pl<br>
-   $ sudo apt-get install libjson-xs-perl 
-   For 64-bit only:
+   $ sudo apt-get install libjson-xs-perl<br>
+   For 64-bit only:<br>
    $ sudo apt-get install lib32stdc++6 
 
 6. Run ./server.sh for test<br>

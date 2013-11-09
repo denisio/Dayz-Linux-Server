@@ -43,6 +43,8 @@ Installation instructions
    </pre>
    $ chmod +x install server *.sh *.pl<br>
    $ sudo apt-get install libjson-xs-perl 
+   For 64-bit only:
+   $ sudo apt-get install lib32stdc++6 
 
 6. Run ./server.sh for test<br>
    Watch the messages - they might inform you whether your installation failed.

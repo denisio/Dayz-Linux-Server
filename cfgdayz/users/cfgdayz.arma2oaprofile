@@ -88,7 +88,7 @@ class Difficulties
 			tracers=0;
 			ultraAI=0;
 			unlimitedSaves=0;
-			vonId=0;
+			vonId=1;
 			weaponCursor=1;
 		};
 		skillFriendly=1;
@@ -120,7 +120,7 @@ class Difficulties
 			tracers=0;
 			ultraAI=0;
 			unlimitedSaves=0;
-			vonID=0;
+			vonID=1;
 			weaponCursor=0;
 		};
 		skillFriendly=1;

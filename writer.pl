@@ -183,10 +183,10 @@ sub init_login_uid {
     return if ($dump =~ m/BattlEye Server: Player/);
     
     my ($p, $str)   = split (/Player\s/, $dump);
-    next unless (defined $str);
+    return unless (defined $str);
     
     my ($name, $uid) = split (/\sconnected\s/, $str);
-    next unless ($name && $uid);
+    return unless ($name && $uid);
     
     if ($uid =~ m/(\d+)/) {
         $uid = $1;

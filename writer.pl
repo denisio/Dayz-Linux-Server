@@ -39,7 +39,7 @@ my %FN_IPC  = (
 );
 
 my $dbh   = connect_to_db();
-my $coder = JSON::XS->new->ascii(1)->shrink(1)->max_depth(5)->max_size(1048576);
+my $coder = JSON::XS->new->ascii(1)->shrink(1)->allow_nonref(1)->max_depth(5)->max_size(1048576);
 
 mkdir (CACHE_DIR) unless (-d CACHE_DIR);
 
@@ -211,9 +211,9 @@ sub init_login_uid {
     return unless $uid;
     print STDERR "$uid => $name\n";
     
-    my $PLAYERS_DIR = CACHE_DIR.'players/'.$myPlayerCounter;
-    my $file        = $PLAYERS_DIR.'/'.$uid.'.sqf';
-    return if (-e $file);
+    #my $PLAYERS_DIR = CACHE_DIR.'players/'.$myPlayerCounter;
+    #my $file        = $PLAYERS_DIR.'/'.$uid.'.sqf';
+    #return if (-e $file);
     
     h_load_player ([101, $uid, 1, $name]);
 }
@@ -498,6 +498,12 @@ sub h_player_update {
         unless ( parse_json ($currentState) ) {
             print STDERR "Error h_player_update(): currentState invalid json!\n";
             $currentState = undef;
+        }
+    }
+    if ($model) {
+        unless ( parse_json ($model) ) {
+            print STDERR "Error h_player_update(): model invalid json!\n";
+            $model = undef;
         }
     }
     
